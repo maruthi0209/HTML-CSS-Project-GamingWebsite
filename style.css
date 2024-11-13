@@ -1,0 +1,356 @@
+/* universal properties */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    width: 100vw;
+    height: 100vh;
+} */
+
+
+/* main container properties */
+.maincontainer{
+    /* position: relative; */
+    /* width: 100vw */
+    width: 100%;
+    height: 140%;
+    background-image: url("./images/banner-bg.jpg"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* .maincontainer>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+} */
+/* nav bar properties */
+nav {
+    width: 100%;
+    /* position: relative; */
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>.logo {
+    /* position: relative;
+    left: 10%; */
+    transform: translateX(70%);
+}
+nav>.navitems {
+    /* position: absolute;
+    right: 8vw; */
+    transform: translateX(-17%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navitems span{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    padding: 10px;
+    background-color: red;
+}
+/* container1 properties */
+.container1 {
+    /* position: relative;
+    left: 10vw; 
+    width: 80vw; */
+    transform: translateX(15%);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 90vh; */
+    height: 90%;
+}
+.content1 {
+    /* position: absolute;
+    left: 0; */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+    height: 100%;
+    color: white;
+}
+.caption>img{
+    width: 20%;
+    transform: translate(50%,-800%);
+}
+.content1>p:first-child{
+    font-size: 1.4rem;
+}
+.content1>p:nth-child(2){
+    font-size: 2rem;
+}
+.content1>p:nth-child(3){
+    font-size: 1rem;
+}
+.content2 {
+    height: 100%;
+    width: 50%;
+    /* position: absolute;
+    right: 0; */
+    color: white;
+}
+.content2>img{
+    /* display: block;
+    height: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 10%; */
+    width: 50%;
+    border-radius: 5%;
+    /* height: 50%; */
+}
+/* container2 properties */
+.container2{
+    position: relative;
+    left: 10vw;
+    width: 80%;
+    height: 32vh;
+    /* border: 1px solid;  */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2%;
+    align-items: center;
+}
+.container2 .content{
+    width: 23%;
+    height: 80%;
+    border-radius: 10%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.container2 .content div{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    background-color: rgb(69, 69, 228);
+}
+.container2 .content img {
+    width: 100%;
+}
+.container2 .content p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-variant: small-caps;
+    font-style: bold;
+}
+
+
+/* trending games section */
+.trending-games{
+    position: relative;
+    left: 10vw;
+    height: 80vh;
+    width: 80vw;
+    border: 2px solid;
+}
+.trending-games div{
+    border: 1px solid;
+}
+.trending-games img{
+    display: block;
+    width: 100%;
+}
+.trending-header{
+    width: 80%;
+    position: absolute;
+    left: 10vw;
+    top: 10%;
+    grid-area: trending-header;
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+.trending {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    /* left: 10vw; */
+    top: 30%;
+    display: grid;
+    grid-template-areas: 
+    'trending1 trending2 trending3 trending4';
+    gap: 2%;
+    /* justify-content: center; */
+}
+.trending1{
+    grid-area: trending1;
+
+}
+.trending2{
+    grid-area: trending2;
+}
+.trending3{
+    grid-area: trending3;
+}
+.trending4{
+    grid-area: trending4;
+}
+
+
+/* most played games section */
+.most-played-games {
+    position: relative;
+    left: 10vw;
+    height: 100vh;
+    width: 80vw;
+    border: 1px solid;
+}
+.most-played-games div {
+    border: 1px solid;
+}
+.most-played-header {
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 20%;
+}
+.most-played {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-areas: 
+    'most-played1 most-played2 most-played3 most-played4 most-played5 most-played6';
+    gap: 2%;
+    position: absolute;
+    top:40%;
+}
+.most-played img {
+    width: 100%;
+}
+.most-played1 {
+    grid-area: most-played1;
+}
+.most-played2 {
+    grid-area: most-played2;
+}
+.most-played3 {
+    grid-area: most-played3;
+}
+.most-played4 {
+    grid-area: most-played4;
+}
+.most-played5 {
+    grid-area: most-played5;
+}
+.most-played6 {
+    grid-area: most-played6;
+}
+
+
+/* top categories section */
+.top-categories-section {
+    width: 80vw;
+    height: 60vh;
+    position: relative;
+    left: 10vw;
+    border: 1px solid;
+}
+.top-categories-header {
+    position: absolute;
+    top:20%;
+    width: 100%;
+    height: 20%;
+}
+.top-categories {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-areas: 
+    'top1 top2 top3 top4 top5';
+    gap:2%;
+}
+.top-categories img {
+    width: 100%;
+}
+.top1{
+    grid-area: top1;
+}
+.top2{
+    grid-area: top2;
+}
+.top3{
+    grid-area: top3;
+}
+.top4{
+    grid-area: top4;
+}
+.top5{
+    grid-area: top5;
+}
+
+
+/* others section */
+.others-section {
+    width: 80vw;
+    height: 90vh;
+    position: relative;
+    left: 10vw;
+    display: inline-block;
+    border: 1px solid;
+    margin-bottom: 50px;
+}
+.others-section div {
+    width: 40%;
+    height: 60%;
+    border: 1px solid;
+    border-radius: 10%;
+}
+.other1{
+    position: absolute;
+    top: 20%;
+}
+.other2 {
+    position: absolute;
+    top: 10%;
+    left:30%;
+    z-index: -1;
+}
+.other2>img{
+    width: 100%;
+    border-radius: 10%;
+}
+.other3 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+}
+
+
+/* footer section */
+footer {
+    margin-top: 50px;
+    position: relative;
+    width: 100vw;
+    height: 28vh;
+    background-image: url('./images/footer-bg.jpg');
+    border-top-left-radius: 120px;
+    border-top-right-radius: 120px;
+    -webkit-background-border: 20%;
+    color: white;
+}
+footer>p{
+    width: 100%;
+    transform: translate(30%, 300%);
+} 
+
