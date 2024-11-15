@@ -111,7 +111,6 @@ nav>img {
     display: flex;
     justify-content: center;
     margin-bottom: 70px;
-    /* padding: 10px 150px; */
     padding: 10px 20px;
 }
 .shopheader>ul>li a{
@@ -141,9 +140,7 @@ nav>img {
 .shopmain {
     max-width: 80%;
     margin: auto;
-    /* padding: 10px 180px; */
     padding: 10px 20px;
-    /* border: 1px solid; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
     gap: 25px;
@@ -219,14 +216,12 @@ nav>img {
     transform: translateY(55%);
 }
 .shoppagination {
-    /* margin-left: -33px; */
     margin-top: 70px;
 }
 .shoppagination>ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* gap: 30px; */
 }
 .shoppagination li{
     margin: 0px 7px;
@@ -304,12 +299,10 @@ footer>p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* width: 300px; */
         width: 100%;
         height: 300px;
         position: absolute;
         top : 100%;
-        /* right: 18%; */
         right: 36%;
         color: black;
         z-index: 1;
