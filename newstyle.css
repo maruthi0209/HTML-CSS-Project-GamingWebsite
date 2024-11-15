@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 
 /* main container */
 .maincontainer {
@@ -49,6 +52,10 @@ nav>img {
     padding: 10px 20px;
     border-radius: 25px;
     transition: all 0.3s;
+}
+.navitems span>a{
+    text-decoration: none;
+    color: white;
 }
 .navitems span:hover {
     background-color: rgba(255, 255, 255, 0.107);
@@ -328,7 +335,6 @@ nav>img {
     margin-top: 10px;
 }
 .game-details {
-    /* margin-left: 40px; */
     transform: translateX(20%);
 }
 .shop {
@@ -401,23 +407,27 @@ nav>img {
     text-align: center;
     background-color: white;
     position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 15px;
 }
 .mp>img {
     width: 100%;
     border-radius: 10%;
 }
 .mp-details {
-    position: relative;
+    /* position: relative; */
     margin: 10px 0px;
-    top: -10%;
+    /* top: 10%; */
 }
 .mp-details>span {
     color: #7a7a7a;
     font-size: 14px;
 }
 .mp>button{
-    position: relative;
-    bottom : -30%;
+    /* position: relative; */
+    /* position: absolute;
+    left: 22%; */
+    margin: auto;
     background-color: var(--main-alt-color);
     height: 40px;
     display: inline-block;
@@ -677,13 +687,15 @@ footer>p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 300px;
-        height: 400px;
-        position: relative;
-        top : 250px;
-        right: -8%;
+        /* width: 300px; */
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top : 100%;
+        /* right: 18%; */
+        right: 36%;
         color: black;
-        z-index: 999;
+        z-index: 1;
     }
     .navitems span:last-child {
         color: white;
@@ -729,6 +741,7 @@ footer>p {
     .content1>img {
         transform: translateX(-10%);
         width: 80%;
+        z-index: -1;
     }
     .content2 {
         position: relative;
