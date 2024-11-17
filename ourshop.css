@@ -1,0 +1,339 @@
+:root {
+    --main-color: #008af8;
+    --main-alt-color: #ee626b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* maincontainer section */
+.maincontainer {
+    width: 100%;
+    background-image: url('./images/page-heading-bg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    border-radius: 0 0 150px 150px;
+}
+
+/* navbar section */
+nav {
+    color: white;
+    width: 100%;
+    height: 10%;
+    transform: translateY(100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 20px;
+    z-index: -1;
+}
+.menu-icon, #checkbox{
+    display: none;
+}
+nav>img {
+    width: 10%;
+    transform: translateX(100%);
+}
+.navitems {
+    transform: translateX(36%);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+}
+.navitems span{
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.navitems span>a{
+    color: white;
+}
+.navitems span:hover {
+    background-color: rgba(255, 255, 255, 0.107);
+}
+.navitems span:nth-child(1) {
+    background-color: rgba(255, 255, 255, 0.107);
+}
+.navitems span:last-child{
+    flex-basis: 12%;
+    padding: 10px;
+    background-color: var(--main-alt-color);
+    border-radius: 18px;
+}
+
+/* our shop title */
+.page-heading{
+    color: white;
+    width: 100%;
+    padding: 200px 0px 100px 0px;
+    text-align: center;
+}
+.page-heading>h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: -10px;
+}
+.headinglinks {
+    display: block;
+    margin: 10px;
+}
+.headinglinks>ul {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+.headinglinks>ul>li:nth-child(1)>a{
+    color: white;
+    text-decoration: none;
+}
+
+/* shopcontainer main section */
+.shopcontainer {
+    width: 100%;
+    margin: 120px 0px;
+}
+.shopheader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    padding: 10px 20px;
+}
+.shopheader>ul>li a{
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.shopheader>ul li {
+    display: inline-block;
+    margin: 0 10px;
+    border-radius: 25px;
+    background-color: #eee;
+}
+.shopheader>ul li:hover>a {
+    color: var(--main-alt-color);
+}
+#li-active {
+    background-color: var(--main-alt-color);
+}
+#a-active {
+    color: white;
+}
+.shopmain {
+    max-width: 80%;
+    margin: auto;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(216px, 1fr));
+    gap: 25px;
+}
+.shopitems {
+    background-color: #eeeeee;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.3s;
+}
+.shopitems:hover {
+    transform: translateY(-12px);
+}
+.shopitems:hover .shop{
+    background-color: var(--main-color);
+}
+.shopitems:hover .game-title{
+    color: var(--main-color);
+} 
+.shopitems>img {
+    display: block;
+    width: 100%;
+    border-radius: 25px;
+}
+.price {
+    padding: 2px 8px;
+    font-size: 1rem;
+    text-align: center;
+    height: 25px;
+    width: 25%;
+    position: absolute;
+    right: 8%;
+    top: 8%;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 15px;
+}
+.discount {
+    top : 15%;
+}
+.old {
+    text-decoration: line-through;
+}
+.details {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trend-genre {
+    font-size: 14px;
+    color: #7a7a7a;
+}
+.game-title {
+    font-weight: 600;
+    margin-top: 10px;
+}
+.game-details {
+    transform: translateX(20%);
+}
+.shop {
+    color: white;
+    margin-right: 10px;
+    height: 40px;
+    width : 40px;
+    border-radius: 50%;
+    background-color: var(--main-alt-color);
+    text-align: center;
+}
+.icon {
+    transform: translateY(55%);
+}
+.shoppagination {
+    margin-top: 70px;
+}
+.shoppagination>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shoppagination li{
+    margin: 0px 7px;
+}
+.shoppagination a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+#pageaction {
+    background-color: var(--main-color);
+    color: white;
+}
+.shoppagination a:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+
+/* footer section */
+footer {
+    margin-top: 150px;
+    background-color: #0071f8;
+    background-image: url(./images/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    border-radius: 150px 150px 0 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+footer>p {
+    padding-top: 35px;
+    margin-right: 20px;
+    color: white;
+}
+
+/* media queries */
+@media screen and (max-width : 700px) {
+    /* nav bar */
+    .navitems {
+        display: none;
+    }
+    nav {
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav>img {
+        width: 15%;
+    }
+    #checkbox {
+        display: none;
+    }
+    .menu-icon{
+        display: inline-block;
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        top: 40%;
+        right: 10%;
+    }
+    #checkbox:checked~.navitems{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top : 100%;
+        right: 36%;
+        color: black;
+        z-index: 1;
+    }
+    .navitems span:last-child {
+        color: white;
+        padding: 20px;
+        width: 100px;
+    }
+}
+
+@media screen and (width >= 700px) and (width < 1000px) {
+    footer {
+        margin-top : 100px;
+    }
+    footer>p {
+        margin: 10px;
+        font-size: 0.8rem;
+    }
+    .navitems{
+        font-size: 0.8rem;
+    } 
+} 
+
+@media screen and (max-width : 600px) {
+    .shopmain, .shopheader {
+        padding: 10px, 50px;
+        margin: auto;
+    }
+    .shopheader>ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

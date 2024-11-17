@@ -1,0 +1,417 @@
+:root {
+    --main-color: #008af8;
+    --main-alt-color: #ee626b;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* maincontainer section */
+.maincontainer {
+    width: 100%;
+    background-image: url('./images/page-heading-bg.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    border-radius: 0 0 150px 150px;
+}
+
+/* navbar section */
+nav {
+    color: white;
+    width: 100%;
+    height: 10%;
+    transform: translateY(100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap : 20px;
+    /* z-index: -1; */
+}
+.menu-icon, #checkbox{
+    display: none;
+}
+nav>img {
+    width: 10%;
+    transform: translateX(100%);
+}
+.navitems {
+    transform: translateX(36%);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 0.9rem;
+}
+.navitems span{
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.navitems span>a{
+    color: white;
+}
+.navitems span:hover {
+    background-color: rgba(255, 255, 255, 0.107);
+}
+.navitems span:nth-child(1) {
+    background-color: rgba(255, 255, 255, 0.107);
+}
+.navitems span:last-child{
+    flex-basis: 12%;
+    padding: 10px;
+    background-color: var(--main-alt-color);
+    border-radius: 18px;
+}
+
+
+/* product details title */
+.page-heading{
+    color: white;
+    width: 100%;
+    padding: 200px 0px 100px 0px;
+    text-align: center;
+}
+.page-heading>h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: -10px;
+}
+.headinglinks {
+    display: block;
+    margin: 10px;
+}
+.headinglinks>ul {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;
+}
+.headinglinks>ul>li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* game container */
+.gamecontainer {
+    margin-top: 120px;
+}
+.gamesection {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #eee;
+}
+.leftcontainer {
+    margin-right: 80px;
+    width: 30%;
+}
+.leftcontainer>img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.rightcontainer {
+    text-align: start;
+    width: 30%;
+}
+.rightcontainer>h2 {
+    display: block;
+    padding-bottom: 10px;
+}
+.price {
+    margin-right: 10px;
+}
+.price:first-of-type {
+    text-decoration: line-through;
+    color: #c8c8c8;
+    font-weight: 500;
+}
+.price:last-of-type {
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 27px;
+}
+.rightcontainer>p {
+    display: block;
+    margin: 50px 0px;
+    font-size: 15px;
+    line-height: 2;
+}
+#quantity {
+    width: 80px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 300;
+    margin-right: 15px;
+}
+.rightcontainer>button {
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    background-color: var(--main-alt-color);
+    border-radius: 25px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 50px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+.rightcontainer>button:hover {
+    background-color: var(--main-color);
+}
+.rightcontainer>ul {
+    margin-top: 50px;
+}
+.property {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 14px;
+    width: 100px;
+}
+.value {
+    color: var(--main-color);
+}
+
+/* tabs section */
+.tabsection {
+    margin-top: 80px;
+}
+.tabcontainer {
+    padding: 0px 15px;
+    /* margin: auto; */
+    margin: 10px 150px;
+}
+.tabcontent {
+    background-color: #f7f7f7;
+    border-radius: 25px;
+    padding: 60px;
+}
+.tabheader {
+    display: flex;
+    justify-content: start;
+    font-size: 20px;
+    font-weight: 600;
+}
+.tabheader>span:nth-child(1) {
+    width: 175px;
+    color: var(--main-color);
+}
+.tabbody  {
+    margin-top: 30px;
+}
+.tabbody p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #4a4a4a;
+}
+.tabbody>p:nth-child(1) {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.tabbody>p:nth-child(2) {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* related games */
+.relatedgames {
+    margin-top: 120px;
+}
+.relatedcontainer {
+    /* margin: auto; */
+    margin: 10px 150px;
+    padding : 0px 15px;
+    /* padding-left: 140px;
+    padding-right: 180px; */
+}
+.relatedheader {
+    display: flex;
+    justify-content: space-between;
+}
+.relatedtitle>span {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--main-alt-color);
+}
+.relatedtitle>h3 {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+.relatedheader>button {
+    border: none;
+    background-color: var(--main-alt-color);
+    color: white;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    transition: all .3s;
+}
+.relatedheader>button:hover {
+    background-color: var(--main-color);
+}
+.relatedbody {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+    gap: 25px;
+    margin-top: 60px;
+}
+.related {
+    height: 250px;
+    text-align: center;
+    background-color: #0071f8;
+    position: relative;
+    border-radius: 25px;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    transition: all 0.3s;
+}
+.related:hover {
+    transform: translateY(-10px);
+}
+.related>img{
+    width: 100%;
+    border-radius: 25px;
+}
+.genre {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    padding: 20px;
+}
+
+
+/* footer section */
+footer {
+    margin-top: 150px;
+    background-color: #0071f8;
+    background-image: url(./images/footer-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 150px;
+    border-radius: 150px 150px 0 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+}
+footer>p {
+    padding-top: 35px;
+    margin-right: 20px;
+    color: white;
+}
+
+/* media queries */
+@media screen and (max-width : 700px) {
+    /* nav bar */
+    .navitems {
+        display: none;
+    }
+    nav {
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav>img {
+        width: 15%;
+    }
+    #checkbox {
+        display: none;
+    }
+    .menu-icon{
+        display: inline-block;
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        top: 40%;
+        right: 10%;
+    }
+    #checkbox:checked~.navitems{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        top : 100%;
+        right: 36%;
+        color: black;
+        z-index: 1;
+    }
+    #checkbox:checked~.navitems a, #checkbox:checked~.navitems span {
+        color: black;
+    }
+    .navitems span:last-child {
+        color: white;
+        padding: 20px;
+        width: 100px;
+    }
+}
+
+@media screen and (width >= 700px) and (width < 1000px) {
+    footer {
+        margin-top : 100px;
+    }
+    footer>p {
+        margin: 10px;
+        font-size: 0.8rem;
+    }
+    .navitems{
+        font-size: 0.8rem;
+    } 
+} 
+
+@media screen and (width < 1024px) {
+    .gamesection {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .tabcontainer, .relatedcontainer, .leftcontainer, .rightcontainer, #quantity {
+        margin: auto;
+    }
+    .leftcontainer, .rightcontainer {
+        width: 80%;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width : 450px) {
+    .tabheader {
+        font-size: 0.6rem;
+    }
+}
